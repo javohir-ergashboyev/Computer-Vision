@@ -8,7 +8,7 @@ mp_pose=mp.solutions.pose
 count=0
 position=None
 
-capture=cv.VideoCapture(0)
+capture=cv.VideoCapture(2)
 with mp_pose.Pose(min_detection_confidence=0.7, min_tracking_confidence=0.7) as pose:
     while capture.isOpened():
         _, frame=capture.read()
